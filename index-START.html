@@ -25,6 +25,11 @@
 		console.log(y);
 		const percent = y / this.offsetHeight;
 		console.log(percent);
+		const minimum = 0.4;
+		const maximum = 4;
+		const height = Math.round(percent*100) + '%';
+		console.log(height);
+		bar.style.height = height;
 	});
 </script>
 </body>
